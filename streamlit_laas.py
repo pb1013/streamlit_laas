@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 from matplotlib import rc
 
-rc('font', family='NanumGothic')
+rc('font', family='Malgun Gothic')
 plt.rcParams['axes.unicode_minus'] = False
 
 # Load environment variables from .env file
