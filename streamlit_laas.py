@@ -75,7 +75,7 @@ elif page == "기업 분석기":
                     ax.bar(years, operating_profits)
                     ax.set_xlabel('Year')
                     ax.set_ylabel('EBIT (million)')
-                    ax.set_title(f'{company} EBIT change')
+                    ax.set_title('EBIT change')
                     st.pyplot(fig)
                 
                 # Filter for sales data
@@ -92,7 +92,7 @@ elif page == "기업 분석기":
                     ax.bar(years, sales)
                     ax.set_xlabel('Year')
                     ax.set_ylabel('Sales(million)')
-                    ax.set_title(f'{company} Sales change')
+                    ax.set_title('Sales change')
                     st.pyplot(fig)
         except Exception as e:
             st.write("DART 데이터 조회 중 오류가 발생했습니다:", str(e))
