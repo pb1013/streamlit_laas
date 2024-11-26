@@ -73,9 +73,9 @@ elif page == "기업 분석기":
                     # Plot the operating profit trend
                     fig, ax = plt.subplots(figsize=(4, 1))
                     ax.bar(years, operating_profits)
-                    ax.set_xlabel('연도')
-                    ax.set_ylabel('영업이익 (백만 원)')
-                    ax.set_title(f'{company} 영업이익 추이')
+                    ax.set_xlabel('Year')
+                    ax.set_ylabel('EBIT (million)')
+                    ax.set_title(f'{company} EBIT change')
                     st.pyplot(fig)
                 
                 # Filter for sales data
@@ -90,9 +90,9 @@ elif page == "기업 분석기":
                     # Plot the sales trend
                     fig, ax = plt.subplots(figsize=(4, 1))
                     ax.bar(years, sales)
-                    ax.set_xlabel('연도')
-                    ax.set_ylabel('매출액 (백만 원)')
-                    ax.set_title(f'{company} 매출액 추이')
+                    ax.set_xlabel('Year')
+                    ax.set_ylabel('Sales(million)')
+                    ax.set_title(f'{company} Sales change')
                     st.pyplot(fig)
         except Exception as e:
             st.write("DART 데이터 조회 중 오류가 발생했습니다:", str(e))
